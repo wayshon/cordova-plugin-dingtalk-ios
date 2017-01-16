@@ -1,0 +1,52 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-dingtalk-ios"
+        version="0.0.1">
+        <name>dingtalk_ios</name>
+        <description>Call Native Plugin</description>
+        <license>Apache 2.0</license>
+        <keywords>call native</keywords>
+        
+        <preference name="DINGTALK_APPID" />
+
+        <js-module name="DingShare" src="www/DingShare.js">
+            <clobbers target="navigator.DingShare"/>
+        </js-module>
+        <platform name="ios">
+        
+            <config-file target="config.xml" parent="/*">
+                <feature name="dingtalk_ios">
+                    <param name="ios-package" value="DingShare" />
+                    <param name="onload" value="true" />
+                </feature>
+                 <preference name="DINGTALK_APPID" value="$DINGTALK_APPID"/>
+            </config-file>
+
+            <header-file src="src/ios/DingShare.h" />
+            <source-file src="src/ios/DingShare.m" />
+            <framework src="src/ios/DTShareKit.framework" custom="true"/>
+            <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+                <array>
+                    <string>dingtalk</string>
+                    <string>dingtalk-open</string>
+                </array>
+            </config-file>
+            <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+                <array>
+                    <dict>
+                        <key>CFBundleTypeRole</key>
+                        <string>Editor</string>
+                        <key>CFBundleURLName</key>
+                        <string>dingtalk</string>
+                        <key>CFBundleURLSchemes</key>
+                        <array>
+                            <string>$DINGTALK_APPID</string>
+                        </array>
+                    </dict>
+                </array>
+            </config-file>
+            <info>
+                安装完插件，请用XCode打开工程，查看URL Types里面dingding的URL type有没有，如果没有请手动添加.after installing this plugin,check the URL Types in your Xcode project.If you don't find URL Types for dingding，manually add it.
+            </info>
+        </platform>
+    </plugin>
