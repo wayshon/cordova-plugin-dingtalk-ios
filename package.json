@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-dingtalk-ios",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Call Native Plugin",
   "cordova": {
     "id": "cordova-plugin-dingtalk-ios",

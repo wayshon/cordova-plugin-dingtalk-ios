@@ -24,7 +24,7 @@
 
             <header-file src="src/ios/DingShare.h" />
             <source-file src="src/ios/DingShare.m" />
-            <framework src="src/ios/DTShareKit.framework" custom="true"/>
+            <framework src="src/ios/DTShareKit.framework" custom="true" framework="true"/>
             <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
                 <array>
                     <string>dingtalk</string>
@@ -46,7 +46,7 @@
                 </array>
             </config-file>
             <info>
-                安装完插件，请用XCode打开工程，查看URL Types里面dingding的URL type有没有，如果没有请手动添加.after installing this plugin,check the URL Types in your Xcode project.If you don't find URL Types for dingding，manually add it.
+                if your cordova version brefore 5.1.1,check the URL Type using XCode,after installing this plugin,check the URL Types in your Xcode project.If you don't find URL Types for dingding，manually add it.
             </info>
         </platform>
     </plugin>

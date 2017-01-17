@@ -1,6 +1,6 @@
-# cordova-plugin-DingTalk-ios
+# cordova-plugin-dingtalk-ios
 
-a plugin for cordova in ios platform to share something to DingTakl
+a plugin for cordova in ios platform to share something to DingTalk
 
 # Feature
 
@@ -8,7 +8,7 @@ Share text, image, web
 
 # Install
 
-1. ```cordova plugin add cordova-plugin-dingtalk-ios --variable DINGTALK_APPID=YOUR_DingTalk_APPID```
+1. <del>```cordova plugin add cordova-plugin-dingtalk-ios --variable DINGTALK_APPID=YOUR_DingTalk_APPID```</del>
 
 2. ```cordova plugin add https://github.com/wayshon/cordova-plugin-dingtalk-ios.git  --variable DINGTALK_APPID=YOUR_DingTalk_APPID```
 
