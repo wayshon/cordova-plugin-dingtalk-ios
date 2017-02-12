@@ -8,7 +8,7 @@ Share text, image, web
 
 # Install
 
-1. <del>```cordova plugin add cordova-plugin-dingtalk-ios --variable DINGTALK_APPID=YOUR_DingTalk_APPID```</del>
+1. ```cordova plugin add cordova-plugin-dingtalk-ios --variable DINGTALK_APPID=YOUR_DingTalk_APPID```
 
 2. ```cordova plugin add https://github.com/wayshon/cordova-plugin-dingtalk-ios.git  --variable DINGTALK_APPID=YOUR_DingTalk_APPID```
 
